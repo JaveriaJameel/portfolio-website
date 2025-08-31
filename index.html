@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Javeria Jameel — Data Scientist Portfolio</title>
+  <meta name="description" content="Portfolio of a Data Scientist: projects, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Javeria Jmaeel</span>
+      </a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul id="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="hero-inner container">
+      <div class="eyebrow">Data Science • ML • Analytics</div>
+      <h1 class="headline">
+        Hi, I'm <span style="color: var(--accent-2);">Javeria Jameel</span> —
+        <span class="typing" id="typing"></span>
+      </h1>
+      <p class="subhead">I build data-driven solutions that turn messy datasets into meaningful, actionable insights. Explore my projects in machine learning, analytics, and full‑stack data apps.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="#contact">Contact Me</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-desc">Brief introduction and what makes you unique as a data scientist.</p>
+    <div class="about">
+      <div class="about-card">
+        <!-- <img class="avatar" src="your-photo.jpg" alt="Your profile photo" /> -->
+        <h3 style="margin: 1rem 0 .5rem;">Javeria Jameel</h3>
+        <p>Data Scientist with a passion for building ML models, dashboards, and scalable data products. Skilled in Python, pandas, scikit‑learn, TensorFlow, SQL, and cloud analytics.</p>
+        <div style="margin-top: 1rem; display:flex; gap:.6rem; flex-wrap: wrap;">
+          <a class="btn btn-ghost" href="#projects">Latest Work</a>
+          <a class="btn btn-primary" href="#contact">Hire Me</a>
+        </div>
+      </div>
+      <div class="about-card">
+        <h3>What I Do</h3>
+        <ul style="margin: .6rem 0 0; padding-left: 1rem; color: var(--muted);">
+          <li>End‑to‑end ML: problem framing → data → modeling → deployment</li>
+          <li>Interactive visual analytics with Plotly/Power BI/Tableau</li>
+          <li>MLOps basics: versioning, experiment tracking, CI/CD</li>
+          <li>Communication: clear storytelling for technical & business audiences</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-desc">A snapshot of my technical toolkit.</p>
+    <div class="grid skills-grid">
+      <div class="skill reveal"><h4>Python</h4><div class="bar"><span data-width="92%"></span></div></div>
+      <div class="skill reveal"><h4>Machine Learning</h4><div class="bar"><span data-width="88%"></span></div></div>
+      <div class="skill reveal"><h4>Deep Learning</h4><div class="bar"><span data-width="80%"></span></div></div>
+      <div class="skill reveal"><h4>SQL</h4><div class="bar"><span data-width="86%"></span></div></div>
+      <div class="skill reveal"><h4>Data Visualization</h4><div class="bar"><span data-width="90%"></span></div></div>
+      <div class="skill reveal"><h4>Cloud & MLOps</h4><div class="bar"><span data-width="72%"></span></div></div>
+    </div>
+  </section>
+
+<!-- Projects -->
+<section id="projects" class="container">
+  <h2 class="section-title">Projects</h2>
+  <p class="section-desc">Selected work. Hover each card to learn more.</p>
+  <div class="grid projects">
+    <!-- Stroke Prediction -->
+    <article class="card reveal">
+      <img src="./images/Stroke-prediction.png" alt="Stroke Prediction screenshot" />
+      <div class="card-content">
+        <h3>🧠 Stroke Prediction</h3>
+        <p class="muted">Developed a predictive model to assess stroke likelihood using Logistic Regression, Random Forest, and SVM. Best performance achieved with Random Forest. Includes EDA, feature engineering, and Streamlit deployment.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Random Forest</span><span class="tag">Streamlit</span></div>
+      </div>
+    </article>
+
+    <!-- AI Chest X-Ray -->
+    <article class="card reveal">
+      <img src="./images/Stroke-prediction-Analysis .jpg" alt="AI Chest X-Ray App screenshot" />
+      <div class="card-content">
+        <h3>🩻 AI Instant Chest X-Ray App</h3>
+        <p class="muted">Built an AI-powered tool for pneumonia detection from X-ray images. Interactive Streamlit app with PDF medical report generation. Leveraged TensorFlow, Keras, and ReportLab.</p>
+        <div class="tags"><span class="tag">Deep Learning</span><span class="tag">TensorFlow</span><span class="tag">Streamlit</span></div>
+      </div>
+    </article>
+
+    <!-- SMS Spam Classification -->
+    <article class="card reveal">
+      <img src="./images/email-spam-or-not.jpg" alt="SMS Spam Classification screenshot" />
+      <div class="card-content">
+        <h3>📧 SMS Spam Classification (NLP)</h3>
+        <p class="muted">Created an SMS spam detection system using NLP. Preprocessed text, trained multiple models achieving ~98% accuracy, and built a Streamlit app with word clouds & confusion matrix visualizations.</p>
+        <div class="tags"><span class="tag">NLP</span><span class="tag">Python</span><span class="tag">Streamlit</span></div>
+      </div>
+    </article>
+
+    <!-- Student Performance Prediction -->
+    <article class="card reveal">
+      <img src="./images/student-performance-prediction.jpg" alt="Student Performance Prediction screenshot" />
+      <div class="card-content">
+        <h3>🎓 Student Performance Prediction</h3>
+        <p class="muted">Designed an ML app to predict student final grades using Random Forest Regressor (R² ≈ 0.89). Interactive Streamlit app with EDA including grade distributions, study time analysis, and correlation heatmaps.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Random Forest</span><span class="tag">Streamlit</span></div>
+      </div>
+    </article>
+
+    <!-- Personal Chatbot -->
+    <article class="card reveal">
+      <img src="./images/personal-chatbot.png" alt="Personal Chatbot screenshot" />
+      <div class="card-content">
+        <h3>🤖 Personal Chatbot</h3>
+        <p class="muted">Developed an AI-powered chatbot integrated into a portfolio website. Built with Python and NLP to answer queries, showcase projects, and improve interactivity.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">NLP</span><span class="tag">Chatbot</span></div>
+      </div>
+    </article>
+
+    <!-- Portfolio Website -->
+    <article class="card reveal">
+      <img src="./images/images.jpg" alt="Portfolio Website screenshot" />
+      <div class="card-content">
+        <h3>🌐 Portfolio Website</h3>
+        <p class="muted">Created a personal portfolio website using HTML, CSS, and JavaScript. Showcases projects, skills, and professional info. Integrated chatbot and links to deployed ML apps.</p>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+  
+    
+  
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-desc">Have a project in mind? Let's talk.</p>
+    <form class="reveal" id="contact-form" action="#" method="post" novalidate>
+      <input class="input" type="text" name="name" placeholder="Your name" required>
+      <input class="input" type="email" name="email" placeholder="Your email" required>
+      <textarea class="input" name="message" rows="5" placeholder="Your message" required></textarea>
+      <div style="display:flex; gap:.8rem; align-items:center; flex-wrap: wrap;">
+        <button class="btn btn-primary" type="submit">Send Message</button>
+        <small id="form-status" aria-live="polite" style="color: var(--muted);"></small>
+      </div>
+    </form>
+  </section>
+
+<!-- Personal Chatbot -->
+<div id="personal-chatbot">
+  <div class="chat-header">
+    <span>💬 Chat with Jiya</span>
+    <button id="chat-close">✖</button>
+  </div>
+  <div class="chat-body" id="chat-body">
+    <div class="bot-message">Hello! I'm Jiya 👩, your personal chatbot.</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="chat-input" placeholder="Type your message..." />
+    <button id="chat-send">Send</button>
+  </div>
+</div>
+
+<!-- Resume & Links Section -->
+<section id="resume" class="container">
+  <h2 class="section-title">Resume & Links</h2>
+  <p class="section-desc">Download my resume and connect with me on professional platforms.</p>
+
+  <div style="display:flex; gap:1rem; flex-wrap: wrap; margin-top:1rem;">
+    <!-- Resume -->
+    <a class="btn btn-primary" href="./Javeria_Jameel_Resume.pdf" target="_blank" download>
+      📄 Download Resume
+    </a>
+
+    <!-- LinkedIn -->
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/javeria-jameel-88a95a380/" target="_blank">
+      🔗 LinkedIn
+    </a>
+
+    <!-- Kaggle -->
+    <a class="btn btn-ghost" href="https://www.kaggle.com/" target="_blank">
+      📊 Kaggle
+    </a>
+
+    <!-- GitHub -->
+    <a class="btn btn-ghost" href="https://github.com/JaveriaJameel" target="_blank">
+      💻 GitHub
+    </a>
+  </div>
+</section>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
